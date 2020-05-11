@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html,
+body {
+  overflow: hidden;
+  background-color:black;font-size: 12px;
+  font-family: 'Roboto Mono', monospace;
+  color:white;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+footer {
+  position: absolute;
+  font-size: 80%;
+  color: white;
+  text-align:right;
+  right:0;
+  padding-right:5%;
+  padding-top:20%;
+}
+
+h1 { 
+    font-size: 180%;
+}
+
+label {
+  color: white;
+  font-size: 150%;
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom:10%;
+  
+}
+
+.instructions {
+  text-align:right;
+  font-size:85%;
+  color:rgba(247, 247, 247, 0.76);
+
+}
+
+audio {
+    filter: sepia(30%) saturate(50%) grayscale(1) contrast(100%) invert(12%);
+    width: 570px;
+    height: 20px;
+}
+
+.container {
+  display: block;
+  padding-top: 10%;
+  margin: 20px auto;
+  width: 80%;
+}
+
+#wrapper {
+  position: relative;
+
+}
+
+#tailHolder,
+#input {
+  color:white;
+  background-color:black;
+  font-size: 12px;
+  line-height: 30px;
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#input {
+  padding-top:10%;
+  color:white;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid;
+}
+
+.gravity {
+  position: fixed;
+  width: auto;
+  transition: transform 3s cubic-bezier(0.55, 0.085, 0.68, 0.53) .05s, opacity .8s ease-in;
+}
+
+.fall-right {
+  transform: translate(30px, 100vh) rotate(20deg);
+  opacity: 0;
+}
