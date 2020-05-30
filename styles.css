@@ -4,8 +4,6 @@ html,
 body {
 
   padding-top:2%;
-
->>>>>>> ceaa0c774388d2be111c8fb4e5691894fc37e3d0
   overflow: hidden;
   background-color:black;font-size: 12px;
   font-family: 'Roboto Mono', monospace;
@@ -14,7 +12,6 @@ body {
 }
 
 .cinemagraph {
-  /*background-image: url(http://media.giphy.com/media/hL8a3mIQK8Ehy/giphy.gif);*/
   background-image: url(https://media.giphy.com/media/Tq4teNuH1kHSM/giphy.gif);
   background-size: cover;
   background-position: bottom;
@@ -48,48 +45,43 @@ label {
   font-family: 'Roboto Mono', monospace;
   padding-bottom:10%;
 
-  
 }
 
 .instructions {
   text-align:right;
-
-
 }
 
 audio {
     filter: sepia(30%) saturate(50%) grayscale(1) contrast(100%) invert(12%);
-
     height: 20px;
 }
 
 .container {
   display: block;
   padding-top: 10%;
-
-  margin: 20px auto;
-  width: 80%;
+  margin: 10px auto;
+  width: 70%;
 
 }
 
 #wrapper {
   position: relative;
-
 }
 
-#tailHolder,
-#input {
+#tailHolder, #input{
   color:white;
   background-color:transparent;
   font-size: 12px;
+  line-height: 10px;
+  width: 100%;
+  font-family: 'Roboto Mono', monospace;
+}
 
+#input {
   background-color:black;
   font-size: 12px;
   line-height: 30px;
-
-  padding-top:5%;
-
-  color:white;
+  padding-top:2%;
   outline: none;
   border: none;
   border-bottom: 2px solid;
