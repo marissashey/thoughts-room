@@ -1,9 +1,9 @@
 {
- "manifest_version": 2,
-"name": "the thoughts room",
- "description": "This extension turns the new tab into a thoughts room. Write anything you'd like and watch your words disappear.",
- "version": "1.0",
-"chrome_url_overrides" : {
+  "manifest_version": 2,
+  "name": "the thoughts room",
+  "description": "This extension turns the New Tab page into a Thoughts Room. Write anything you'd like and watch your words disappear.",
+  "version": "1.0",
+  "chrome_url_overrides" : {
     "newtab":"room.html"
-}
+  }
 }
