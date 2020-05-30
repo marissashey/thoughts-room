@@ -5,6 +5,7 @@ const tailHolder = document.getElementById('tailHolder');
 input.addEventListener('input', function(e) {
   const {value} = this;
 
+
   if (value.includes('.')) {
     cretaeTail(value);
     this.value='';
