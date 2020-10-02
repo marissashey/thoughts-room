@@ -2,13 +2,11 @@
 
 html,
 body {
-
   padding-top:2%;
   overflow: hidden;
   background-color:black;font-size: 12px;
   font-family: 'Roboto Mono', monospace;
-  color:white;
-
+  color: white;
 }
 
 .cinemagraph {
@@ -17,14 +15,12 @@ body {
   background-position: bottom;
 }
 
-
 footer {
   position: absolute;
   font-size: 80%;
   color: white;
   text-align:right;
   right:0;
-
   padding-right:2%;
 }
 
@@ -36,7 +32,6 @@ h1 {
 
 p {
   padding-left:2%;
-
 }
 
 label {
@@ -44,7 +39,6 @@ label {
   font-size: 150%;
   font-family: 'Roboto Mono', monospace;
   padding-bottom:10%;
-
 }
 
 .instructions {
@@ -61,7 +55,6 @@ audio {
   padding-top: 10%;
   margin: 10px auto;
   width: 70%;
-
 }
 
 #wrapper {
