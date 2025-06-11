@@ -1,0 +1,14 @@
+@tailwind utilities;
+body {
+  background-color: #1a202c; /* gray-900 */
+  color: white;
+  font-family: ui-sans-serif, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+}
+
+input {
+  color: white;
+}
+
+inputContainer {
+}
