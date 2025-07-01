@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* Base font and layout */
+html,
+body,
+#root {
+  @apply text-white font-sans text-xl leading-relaxed p-0 h-screen overflow-x-hidden;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+input,
+.mirror-text,
+.mirror-word,
+.falling-word {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Input styling */
+input {
+  @apply w-full p-0 m-0 bg-transparent border-0 border-b border-white;
+}
+
+/* Container */
+.container {
+  @apply relative m-0 p-0 overflow-visible min-h-[300px];
+}
+
+/* Mirror text for measuring input */
+.mirror-text {
+  @apply absolute p-0 m-0 top-0 left-0 w-full h-full opacity-0 pointer-events-none select-none whitespace-pre-wrap break-words;
+}
+
+/* Mirror words - inline block for correct measurements */
+.mirror-word {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Falling word styles */
+.falling-word {
+  @apply absolute whitespace-nowrap pointer-events-none select-none;
+  will-change: transform, opacity;
+}
+/* --- NIGHT BACKGROUND --- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  background: radial-gradient(ellipse at bottom, #0a0a23 0%, #000 100%);
+  background-size: cover;
+}
