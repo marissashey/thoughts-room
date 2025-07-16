@@ -38,16 +38,15 @@ export default function TextBox() {
   }
 
   return (
-    <div className='relative w-full max-w-xl mt-10 justify-center'>
-      {/* INPUT */}
+    <div className='relative w-full max-w--center'>
+      {/* input */}
       <input
-        className='w-full grow border-b outline-none border-white bg-transparent absolute z-10 text-white whitespace-nowrap overflow-x-auto'
+        className='w-full border-b outline-none bg-transparent absolute whitespace-nowrap overflow-x-auto'
         ref={inputRef}
         value={input}
         onChange={(e) => {
           const val = e.target.value;
-          // const prev = input[input.length - 1];
-          // console.log(prev);
+
           const cur = val[val.length - 1];
 
           if (cur === " ") {
@@ -67,7 +66,7 @@ export default function TextBox() {
       />
 
       {/* INVISIBLE MIRROR SPANS */}
-      <div className='absolute w-full whitespace-nowrap invisible z-100'>
+      <div className='absolute w-full whitespace-nowrap invisible'>
         {input
           .trim()
           .split(" ")
