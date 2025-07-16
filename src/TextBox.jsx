@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Measure from "react-measure";
+import "./index.css";
 
 export default function TextBox() {
   const [input, setInput] = useState("");
@@ -38,7 +39,7 @@ export default function TextBox() {
   }
 
   return (
-    <div className='relative w-full max-w--center'>
+    <div className='relative'>
       {/* input */}
       <input
         className='w-full border-b outline-none bg-transparent absolute whitespace-nowrap overflow-x-auto'

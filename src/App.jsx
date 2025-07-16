@@ -7,7 +7,7 @@ import TextBox from "./TextBox";
  * META TODO: commit more often
  *
  * TODO: base stuff
- * the thoughts room page - idk how to center stuff nicely - tinkering with the css but it is smushed right now
+ * - (main page) idk how to center stuff nicely - tinkering with the css but it is smushed right now
  *
  * TODO: additional features
  * 1: DONE BUTTON
@@ -32,13 +32,13 @@ export default function Room() {
   // press space -> fade out
   useEffect(() => {
     const onKeyDown = (e) => {
-      if (e.code === "Space" && showPrompt) {
+      if (e.code === "Space" && !fadeOut) {
         setFadeOut(true);
       }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [showPrompt]);
+  }, [fadeOut]);
 
   // calculate header typing time -> delay -> show door msg
   useEffect(() => {
@@ -56,9 +56,7 @@ export default function Room() {
         animate={{ opacity: fadeOut ? 0 : 1 }}
         transition={{ duration: 1 }}
         onAnimationComplete={() => {
-          if (fadeOut) {
-            () => setShowIntro(false); // move to main room
-          }
+          if (fadeOut) setShowIntro(false); // move to main room
         }}
         className='flex flex-col items-center justify-center min-h-screen px-4 text-center text-base whitespace-pre-wrap'
       >
@@ -107,7 +105,7 @@ export default function Room() {
   // main content
   // TODO: currently smushed
   return (
-    <div className='flex flex-col items-center min-h-screen justify-center px-4'>
+    <div className=''>
       <div className=''>
         <ReactTyped
           strings={["the thoughts room"]}

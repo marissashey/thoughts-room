@@ -5,7 +5,6 @@
   body {
     background-color: black;
     color: white;
-    border: white;
   }
 }
 @layer utilities {
