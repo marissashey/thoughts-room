@@ -8,6 +8,7 @@ import TextBox from "./TextBox";
  *
  * TODO: base stuff
  * - (main page) idk how to center stuff nicely - tinkering with the css but it is smushed right now
+ * - (both) i want big header and clean spacing across pg
  *
  * TODO: additional features
  * 1: DONE BUTTON
